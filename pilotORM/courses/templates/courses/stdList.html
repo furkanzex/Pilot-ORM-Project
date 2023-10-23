@@ -1,0 +1,10 @@
+{% extends "courses/templates.html" %}
+
+{% block content %}
+    <h1>Students</h1>
+    <ul>
+        {% for student in students %}
+            <li>{{ student.first_name }} {{ student.last_name }} (Student Number: {{ student.student_number }})</li>
+        {% endfor %}
+    </ul>
+{% endblock %}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>PilotORM</title>
+</head>
+<body>
+    <header>
+        <h1>PilotORM</h1>
+        <nav>
+            <ul>
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'students' %}">Add Student</a></li>
+                <li><a href="{% url 'student_list' %}">Student List</a></li>
+                <li><a href="{% url 'courses' %}">Add Course</a></li>
+                <li><a href="{% url 'course_list' %}">Course List</a></li>
+                <li><a href="{% url 'takenCourses' %}">Taken Courses</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        {% block content %}{% endblock %}
+    </main>
+</body>
+</html>

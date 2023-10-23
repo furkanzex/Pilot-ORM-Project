@@ -1,0 +1,11 @@
+{% extends "courses/templates.html" %}
+
+{% block content %}
+    <h1>Students</h1>
+    <form method="post" action="{% url 'create_student' %}">
+        {% csrf_token %}
+        {{ student_form.as_p }}
+        <button type="submit">Kaydet</button>
+    </form> 
+    
+{% endblock %}
